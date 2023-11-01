@@ -1,0 +1,123 @@
+body {
+    text-align: center;
+    background-color: rgb(143, 84, 28);
+  }
+  main {
+    display: inline-block;
+    position: relative;
+  }
+  
+
+  #menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 220px;
+  }
+  h3,
+  p {
+    color: white;
+  }
+  #menu p {
+    width: 80px;
+    font-size: 24px;
+    padding: 3px;
+    margin: 15px;
+    border: solid 1px white;
+    cursor: pointer;
+    background: black;
+    color: white;
+  }
+  
+  /* game */
+  #board {
+    margin: 0 auto;
+    background: #555555;
+  }
+  td.cell {
+    background: rgb(128, 216, 154);
+    width: 46px;
+    height: 46px;
+    margin: 2px;
+  }
+  .cell div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  /* .cell-6 > tr > td {
+    width: 63px;
+    height: 63px;
+  } */
+  /* .cell-6 > tr > td > div {
+    width: 50px;
+    height: 50px;
+  }
+  .cell-4 > tr > td {
+    width: 92px;
+    height: 92px;
+  }
+  .cell-4 > tr > td > div {
+    width: 70px;
+    height: 70px; */
+  /* } */
+  .black {
+    background: black;
+  }
+  .white {
+    background: white;
+  }
+  h2 {
+    text-align: center;
+    margin: 5px 0;
+  }
+  #counter {
+    margin: 0 auto;
+    width: 350px;
+    display: flex;
+    line-height: 50px;
+    font-weight: bold;
+    justify-content: space-between;
+  }
+  #numBlack {
+    font-size: 36px;
+    margin: 5px;
+    width: 100px;
+    height: 50px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+  }
+  #numWhite {
+    font-size: 36px;
+    margin: 5px;
+    width: 100px;
+    height: 50px;
+    border: solid 1px black;
+    border-radius: 5px;
+  }
+  
+  /* end */
+  #btn {
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    width: 120px;
+    margin: auto;
+    padding: 1rem 1rem;
+    font-weight: bold;
+    border: 2px solid #184d0e;
+    color: #277a17;
+    border-radius: 100vh;
+    transition: 0.5s;
+  }
+  #btn{
+    color:#fff;
+    background: #277a17;
+  }
+  .hide {
+    display: none;
+  }
+  a .btn{
+    opacity: 0;
+  }

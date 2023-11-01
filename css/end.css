@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(143, 84, 28);
+}
+.title{
+    margin-bottom: 5px;
+}
+.name{
+    margin-bottom: 50px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: serif;
+}
+div{
+    text-align: center;
+}
+
+
+a.btn{
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    width: 120px;
+    margin: auto;
+    padding: 1rem 1rem;
+    font-weight: bold;
+    border: 2px solid #184d0e;
+    color: #277a17;
+    border-radius: 100vh;
+    transition: 0.5s;
+}
+a.btn{
+    color:#fff;
+    background: #277a17;
+}
+
+.winner{
+    border: solid 3px;
+    border-color: #184d0e;
+    border-radius: 40px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}

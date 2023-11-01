@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/history.css">
+    <title>対戦記録</title>
+</head>
+<body>
+    <h1>CSV Data</h1>
+    <table id="csvTable">
+        <thead>
+            <tr>
+                <th>ヘッダー1</th>
+                <th>ヘッダー2</th>
+                <!-- 列のヘッダーを追加 -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- データ行はここに追加されます -->
+        </tbody>
+    <div><a href="./title.html" class="btn">タイトルに戻る</a></div>
+</body>
+    
+
+
+
+<script>
+    
+    // CSVファイルのパス
+    var csvFile = 'history.csv';
+
+    // ページが読み込まれた後に実行
+    // window.onload = function() {
+    //     var table = document.getElementById('csvTable');
+    //     var tbody = table.querySelector('tbody');
+        
+          // ページが読み込まれた後に実行
+          window.onload = function() {
+            var table = document.getElementById('csvTable');
+            var tbody = table.querySelector('tbody');
+
+            // CSVファイルを読み込む
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', csvFile, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var lines = xhr.responseText.split('\n');
+                    lines.forEach(function(line) {
+                        var cells = line.split(',');
+                        var row = document.createElement('tr');
+                        cells.forEach(function(cell) {
+                            var cellElement = document.createElement('td');
+                            cellElement.appendChild(document.createTextNode(cell));
+                            row.appendChild(cellElement);
+                        });
+                        tbody.appendChild(row);
+                    });
+                }
+            };
+            xhr.send();
+        };
+</script>
+
+
+</body>
+</html>

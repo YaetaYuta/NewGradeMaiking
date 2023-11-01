@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/name.css">
+    <title>名前入力</title>
+</head>
+<body>
+    <h3>プレイヤー名を入力してください</h3>
+    <input type="text" placeholder="お名前" id="myInput">
+    
+    <div><a href="./game.html" id="btn" onclick="storeInput()">開始</a></div>
+
+    <script>
+        // 名前を取得
+
+        function storeInput(){
+            const inputText = document.getElementById('myInput').value;
+            localStorage.setItem('inputText',inputText);
+            location.href = './game.html';
+            location.href = './end.html';
+        }
+        
+
+    </script>
+</body>
+</html>

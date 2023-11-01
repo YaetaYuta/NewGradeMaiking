@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/end.css">
+    <title>エンドタイトル</title>
+</head>
+<body>
+    <div>
+        <!-- 自分と相手の点数を表示 -->
+        <p><br></p>
+        <p></p>
+        
+    </div>
+    <div class="winner">
+        <h2 id="displayText"></h2><h2>の勝ち！！</h2>
+    </div>
+
+    <a href="./title.html" class="btn">タイトルに戻る</a>
+    <a href="./game.html" class="btn">もう一度遊ぶ</a>
+
+    <script>
+
+        const storedText = localStorage.getItem('inputText');
+        if(storedText){
+            document.getElementById('displayText').textContent = storedText;
+        }
+        console.log(storedText);
+    </script>
+</body>
+</html>

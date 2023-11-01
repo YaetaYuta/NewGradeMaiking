@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(143, 84, 28);
+}
+h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+div{
+    text-align: center;
+}
+
+
+a.btn{
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    width: 120px;
+    margin: auto;
+    padding: 1rem 1rem;
+    font-weight: bold;
+    border: 2px solid #184d0e;
+    color: #277a17;
+    border-radius: 100vh;
+    transition: 0.5s;
+}
+a.btn{
+    color:#fff;
+    background: #277a17;
+}

@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(143, 84, 28);
+}
+h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+div{
+    text-align: center;
+}
+
+input{
+    position: relative;
+    width: 20%;
+    margin: 40px;
+}
+input[type=text]{
+    font: 15px/24px;
+    box-sizing: border-box;
+    margin: 8px 0;
+    padding: 0.3em;
+    border: 1px solid #184d0e ;
+    border-radius: 5px;
+}
+
+a#btn{
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    width: 100px;
+    margin: auto;
+    padding: 1rem 1rem;
+    font-weight: bold;
+    border: 2px solid #184d0e;
+    color: #277a17;
+    border-radius: 100vh;
+    transition: 0.5s;
+}
+a#btn{
+    color:#fff;
+    background: #277a17;
+}
